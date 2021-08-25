@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <form class="form">
+        <h2>Registration</h2>
+        <div class="textInputs">
+          <label for="firstName">First Name</label>
+          <br />
+          <input type="text" id="firstName" required />
+          <p id="firstNameError" class="red"></p>
+          <label for="lastName">Last Name</label>
+          <br />
+          <input type="text" id="lastName" required />
+          <p id="lastNameError" class="red"></p>
+          <label for="password">Your Password</label>
+          <br />
+          <input type="text" id="password" required />
+          <p id="passwordError" class="red"></p>
+          <label for="confirmPassword">Confirm Your Password</label>
+          <br />
+          <input type="text" id="confirmPassword" required />
+          <p id="confirmPasswordError" class="red"></p>
+        </div>
+        <hr />
+        <div class="selection">
+          <h3>Course Selection</h3>
+          <input
+            type="checkbox"
+            id="e4White"
+            name="courses"
+            value="e4 openings"
+          />
+          <label for="e4White">e4 openings</label>
+          <br />
+          <input
+            type="checkbox"
+            id="d4White"
+            name="courses"
+            value="d4 openings"
+          />
+          <label for="d4White">d4 openings</label>
+          <br />
+          <input
+            type="checkbox"
+            id="gambitsWhite"
+            name="courses"
+            value="gambits for white"
+          />
+          <label for="gambitsWhite">gambits for white</label>
+          <br />
+          <input
+            type="checkbox"
+            id="gambitsBlack"
+            name="courses"
+            value="gambits for black"
+          />
+          <label for="gambitsBlack">gambits for black</label>
+          <br />
+          <p id="coursesError" class="red"></p>
+          <hr />
+          <h3>Location</h3>
+          <select name="city" id="city">
+            <option value="" selected disabled>Choose Your City</option>
+            <option value="New York">New York</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Chicago">Chicago</option>
+            <option value="Atlanta">Atlanta</option>
+            <option value="St. Louis">St. Louis</option>
+          </select>
+          <p id="cityError"></p>
+          <hr />
+          <h3>Gender</h3>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+        </div>
+        <hr />
+        <div class="submit">
+          <button type="submit">Register</button>
+          <br />
+          <br />
+        </div>
+      </form>
+    </div>
+    <div>
+      <br />
+      <button id="showAll">List All Users</button>
+      <br />
+      <br />
+    </div>
+    <div class="userList"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
